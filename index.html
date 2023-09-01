@@ -6,9 +6,26 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css>
 
 </head>
 <body>
+  
+  <header>
+    <nav>
+      <div class="navbar bg-base-500 flex justify-between">
+  <div>
+    <img src="./Logo.png" alt="">
+  </div>
+  <div>
+    <button onclick="sort-btn()" class="btn ">Sort by view</button>
+  </div>
+  <div><button  id="openFolderButton" class="btn btn-error">Blog</button></div>
+ 
+ 
+</div>
+    </nav>
+  </header>
 
 
    <div class="tab-container w-full"> 
@@ -19,6 +36,7 @@
       </div>
 </div>
 <div id="phone-card " class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 " >
+ 
    <!-- <div class="card w-96 glass">
         <figure><img src="./img.jpg" alt="car!"/></figure>
         <div class="card-body">
@@ -34,5 +52,6 @@
 </div>
 
     <script src="./index.js"></script>
+    <script src="./file.js"></script>
 </body>
 </html>
