@@ -20,43 +20,20 @@ const handleCatagory =async()=>{
 function createDrawingButton() {
   // Create a button element
   const drawingButton = document.createElement('button');
-  
-  // Set button attributes and content
-  // drawingButton.textContent = '';
   drawingButton.innerHTML=`
  <img  class="w-[200px] mx-auto" src="./Icon.png" >
  <p class="text-5xl ">Oops!! Sorry, There is no content here</p>
-  `
-  // drawingButton.classList.add('btn', 'btn-primary'); // Add classes for styling
-  
-  // Add an event listener to the button to start drawing when clicked
-  drawingButton.addEventListener('click', startDrawing);
-  
+  `; 
   // Append the button to the drawing container
   const drawingContainer = document.getElementById('drawingContainer');
   drawingContainer.appendChild(drawingButton);
 }
 
-// Function to handle the drawing
-function startDrawing() {
-  const canvas = document.getElementById('canvas');
-  const context = canvas.getContext('2d');
 
-  // Add your drawing logic here
-  // For example, you can listen for mouse events to draw on the canvas
-  // canvas.addEventListener('mousemove', function (e) {
-  //   if (e.buttons === 1) { // Check if the left mouse button is pressed
-  //     context.beginPath();
-  //     context.arc(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top, 5, 0, Math.PI * 2);
-  //     context.fillStyle = 'black'; // Set the drawing color
-  //     context.fill();
-  //     context.closePath();
-  //   }
-  // });
-}
 
 // Call the createDrawingButton function to create the button
 createDrawingButton();
+
 
 
  const handlelodeyoutube=async(catagoryId)=>{
@@ -99,15 +76,6 @@ createDrawingButton();
     }
 
 
-
-  //   function toggleContent() {
-  //     var content = document.getElementById("content");
-  //     if (content.style.display === "none" || content.style.display === "") {
-  //         content.style.display = "block";
-  //     } else {
-  //         content.style.display = "none";
-  //     }
-  // }
 
 
 handleCatagory();
